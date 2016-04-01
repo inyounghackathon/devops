@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votenator</title>
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+        <link rel="stylesheet" type="text/css" href="styles/default.css">
+    </head>
+
+    <body>
+        <!-- Vote Form -->
+        <div id="vote_form">
+            <header class="header">
+                Place Your Vote
+            </header>
+            <div class="question">
+                What would you like for dinner?
+            </div>
+            
+            <div styel="width: 100%">
+                <p style="padding: .5em 1em 0em 1em;">Please select and place your vote for the question above.</p>
+                <div>
+                    <select style="width: 90%; padding: 10px;  margin: 0em 1em 1em 1em;">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+                
+                <button class="button center">Vote</button>
+            </div>
+        </div>
+        
+        <!-- Results Summary -->
+        <div id="summary" style="display: none;">
+            <header class="header">
+                Voting Results
+            </header>
+            <div class="question">
+                What would you like for dinner?
+            </div>
+            
+            <div class="tile">
+                <div class="title">PEOPLE VOTED</div>
+                <div class="content">42</div>
+            </div>
+            
+            <div class="place">
+                <div class="title">
+                    <div class="first-rank">1ST PLACE</div>
+                    <div class="first-rank-title">Panko Chilli Chicken</div>
+                </div>
+                <div style="background-color: #fff;">
+                    <div class="vote-number"> 16 voted</div>
+                    <div class="vote-percentage" >30% voted</div>
+                </div>
+            </div>
+            
+            <div class="other-place">
+                <div class="title">
+                <div class="other-place-rank">2ND PLACE</div>
+                    <div class="other-place-item">Panko Chilli Chicken</div> 
+                </div>
+                <div class="vote-container">
+                <div class="vote">10 votes</div>
+                    <div class="percentage">30%</div> 
+                </div>
+            </div>
+            
+            <div class="other-place">
+                <div class="title">
+                <div class="other-place-rank">3RD PLACE</div>
+                    <div class="other-place-item">Panko Chilli Chicken</div> 
+                </div>
+                <div class="vote-container">
+                <div class="vote">10 votes</div>
+                    <div class="percentage">30%</div> 
+                </div>
+            </div>    
+        </div> <!-- End Results Summary -->
+        
+        
+    </body>
+</html>

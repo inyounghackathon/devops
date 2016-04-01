@@ -1,0 +1,158 @@
+/* Global
+-----------------------------------------------------*/
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #F7F7F7;
+}
+
+.green {
+    background-color: #89A864;
+}
+
+.grey {
+    background-color: #646466;
+}
+
+.border {
+    color: #646466;
+}
+
+/* Header
+-----------------------------------------------------*/
+.header {
+    
+    width: 100%;
+    color: #fff;
+    background-color: #89A864;
+    padding:  10px;
+    font-size: 2em;
+}
+
+
+
+/* Question
+-----------------------------------------------------*/
+.question {
+    border-bottom: solid 1px #ccc;
+    padding: .8em;
+    background-color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* Vote Form
+-----------------------------------------------------*/
+
+
+    
+/* Votes
+-----------------------------------------------------*/
+.tile {
+    margin: 1em;
+    display: inline-block;
+    border:  solid 1px #646466;
+    background-color: #fff;
+    width: 35%;
+    height: 150px;
+    text-align: center;
+}
+
+.tile .title {
+    background-color: #F7F7F7;
+    padding: .5em;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.tile .content {
+    font-size: 6em;
+}
+
+ .place {
+    display: inline-block;
+    border: solid 1px #646466;
+    margin: 1em 1em 1em 0em;
+}
+
+.place .title {
+    background-color: #000;
+    color: #fff;
+}
+
+.first-rank {
+    font-size: 0.8em;
+    padding: 15px 10px 5px 10px;
+}
+
+.first-rank-title {
+    font-size: 1.3em;
+    padding: 0px 10px 30px 10px;
+}
+
+.vote-number {
+    display: inline-block;
+    width: 40%;
+    border-right: solid 1px #646466;
+    padding: 0.5em;
+}
+
+.vote-percentage {
+    display: inline-block;
+}
+
+.other-place {
+    margin: 0em 0em 1em 1em;
+    background-color: #fff;
+    border: solid 1px #646466;
+    width: 91%;
+}
+
+.other-place .title {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    width: 70%;
+}
+
+.other-place-rank {
+    font-size: 0.8em;
+    padding: 15px 10px 5px 10px;
+}
+
+.other-place-item {
+    font-size: 1.2em;
+    padding: 0px 10px 10px 10px;
+}
+
+.vote-container {
+    display: inline-block;
+    width: 20%;
+}
+
+.vote {
+    font-size: 0.8em;
+    padding: 15px 10px 5px 10px;
+}
+
+.percentage {
+    font-size: 1.2em;
+    padding: 0px 10px 10px 10px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 60%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 1em 1em 1em 3em;
+    cursor: pointer;
+}
+
+/* Graph
+-----------------------------------------------------*/
+
