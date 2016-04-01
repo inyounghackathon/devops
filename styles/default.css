@@ -21,7 +21,7 @@ body {
 /* Header
 -----------------------------------------------------*/
 .header {
-    
+
     width: 100%;
     color: #fff;
     background-color: #89A864;
@@ -45,7 +45,7 @@ body {
 -----------------------------------------------------*/
 
 
-    
+
 /* Votes
 -----------------------------------------------------*/
 .tile {
@@ -76,7 +76,7 @@ body {
 }
 
 .place .title {
-    background-color: #000;
+    background-color: rgba(29, 183, 96, 0.93);
     color: #fff;
 }
 
@@ -93,7 +93,7 @@ body {
 .vote-number {
     display: inline-block;
     width: 40%;
-    border-right: solid 1px #646466;
+    border-right: 1px #646466;
     padding: 0.5em;
 }
 
@@ -156,3 +156,18 @@ body {
 /* Graph
 -----------------------------------------------------*/
 
+/*preloading transition*/
+.transitionOverlayPage
+{
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+height: 100%;
+background-color: darkgray;
+position: fixed;
+font-size: 30px;
+color: green;
+    text-align: center;
+    padding-top: 200px;
+}

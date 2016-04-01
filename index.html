@@ -6,6 +6,34 @@
     <title>Votenator</title>
         <link rel="stylesheet" type="text/css" href="styles/normalize.css">
         <link rel="stylesheet" type="text/css" href="styles/default.css">
+        <script>
+        function showResult(){
+            var userChoice ="";
+          if (document.getElementById("car").value == "select"){
+            document.getElementById("selectError").hidden = false;
+          }else{
+            document.getElementById("vote_form").hidden = true;
+
+
+            if(document.getElementById("car").value == "hyundai"){
+                userChoice = "Hyundai";
+                document.getElementById("selectError").hidden = false;
+            }else if(document.getElementById("car").value == "lexus"){
+                userChoice = "Lexus";
+            }else if(document.getElementById("car").value == "buick") {
+                userChoice = "Buick";
+            }else if(document.getElementById("car").value == "audi"){
+                userChoice = "Audi";
+            }
+
+            var vote = alert( userChoice + " is a great choice!");
+            document.getElementById("selectError").hidden = true;
+            document.getElementById("summary").style.display = "block";
+          }
+        }
+        </script>
+        <!-- <script src="jquery-1.8.3.js"></script>
+        <script src="my_jquery.js"></script> -->
     </head>
 
     <body>
@@ -15,72 +43,77 @@
                 Place Your Vote
             </header>
             <div class="question">
-                What would you like for dinner?
+                What would you like for your next car?
             </div>
-            
+
             <div styel="width: 100%">
                 <p style="padding: .5em 1em 0em 1em;">Please select and place your vote for the question above.</p>
                 <div>
-                    <select style="width: 90%; padding: 10px;  margin: 0em 1em 1em 1em;">
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="opel">Opel</option>
-                        <option value="audi">Audi</option>
-                    </select>
+                  <select id = "car" style="width: 90%; padding: 10px;  margin: 0em 1em 1em 1em;">
+                      <option value="select">Select a car</option>
+                      <option value="hyundai">Hyundai</option>
+                      <option value="lexus">Lexus</option>
+                      <option value="buick">Buick</option>
+                      <option value="audi">Audi</option>
+                  </select>
+                  <div>
+                  <span id="selectError" class="errorMessage" style="color:red;" hidden>Select a car.</span>
                 </div>
-                
-                <button class="button center">Vote</button>
+                </div>
+                <button class="button center" name="vote"  id="vote" onclick="showResult();"  value="vote">Vote</button>
             </div>
         </div>
-        
+
         <!-- Results Summary -->
         <div id="summary" style="display: none;">
             <header class="header">
                 Voting Results
             </header>
             <div class="question">
-                What would you like for dinner?
+                What would you like for your next car?
             </div>
-            
+
             <div class="tile">
                 <div class="title">PEOPLE VOTED</div>
                 <div class="content">42</div>
             </div>
-            
+
             <div class="place">
                 <div class="title">
                     <div class="first-rank">1ST PLACE</div>
-                    <div class="first-rank-title">Panko Chilli Chicken</div>
+                    <div class="first-rank-title">Lexus</div>
+                    <img src="auto-969048_640.jpg" alt="lexus">
                 </div>
                 <div style="background-color: #fff;">
-                    <div class="vote-number"> 16 voted</div>
-                    <div class="vote-percentage" >30% voted</div>
+                    <div class="vote-number"> 42 voted</div>
+                    <div class="vote-percentage" >38% voted</div>
                 </div>
             </div>
-            
+
             <div class="other-place">
                 <div class="title">
                 <div class="other-place-rank">2ND PLACE</div>
-                    <div class="other-place-item">Panko Chilli Chicken</div> 
+                    <div class="other-place-item">Hyundai</div>
                 </div>
                 <div class="vote-container">
-                <div class="vote">10 votes</div>
-                    <div class="percentage">30%</div> 
+                <div class="vote">32 votes</div>
+                    <div class="percentage">25%</div>
                 </div>
             </div>
-            
+
             <div class="other-place">
                 <div class="title">
                 <div class="other-place-rank">3RD PLACE</div>
-                    <div class="other-place-item">Panko Chilli Chicken</div> 
+                    <div class="other-place-item">Audi</div>
                 </div>
                 <div class="vote-container">
                 <div class="vote">10 votes</div>
-                    <div class="percentage">30%</div> 
+                    <div class="percentage">10%</div>
                 </div>
-            </div>    
+            </div>
+
+<!-- preloading transition -->
+          <!-- <div class="transitionOverlayPage"> Page Loading Screen</div> -->
         </div> <!-- End Results Summary -->
-        
-        
     </body>
 </html>
